@@ -1,5 +1,6 @@
 
 import { useRef, useEffect } from 'react';
+import NavButton from './NavButton';
 
 const SecondVideoSection = () => {
   const videoRef = useRef<HTMLDivElement>(null);
@@ -60,6 +61,16 @@ const SecondVideoSection = () => {
               <div className="absolute top-1/2 left-0 w-full h-[1px] bg-cyber-purple"></div>
               <div className="absolute top-3/4 left-0 w-full h-[1px] bg-cyber-purple"></div>
             </div>
+          </div>
+          
+          {/* Button added below the video */}
+          <div className="mt-8 text-center">
+            <NavButton 
+              href="https://chatgpt.com/g/g-67d33c4324808191a4c8d81546dd6dee-if-ai-ruled-the-world-gpt"
+              className="text-lg px-8 py-4 bg-gradient-to-r from-cyber-purple to-cyber-blue text-white border-0"
+            >
+              SPEAK TO IF AI RULED THE WORLD
+            </NavButton>
           </div>
         </div>
       </div>
