@@ -33,7 +33,7 @@ const SecondVideoSection = () => {
               <div className="w-3 h-3 rounded-full bg-cyber-red mr-2"></div>
               <div className="w-3 h-3 rounded-full bg-cyber-yellow mr-2"></div>
               <div className="w-3 h-3 rounded-full bg-cyber-green"></div>
-              <div className="ml-auto font-mono text-xs text-white">EXTENDED ANALYSIS</div>
+              <div className="ml-auto font-mono text-xs text-white">Humanity Recalibration in Progress...</div>
             </div>
             
             <div className="pt-8">
