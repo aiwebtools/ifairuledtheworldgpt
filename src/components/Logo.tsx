@@ -27,7 +27,12 @@ const Logo = () => {
     <div ref={logoRef} className="relative w-32 h-32 mx-auto mb-4 hexagon bg-cyber-black animate-pulse-glow border-2 border-cyber-blue p-5 flex items-center justify-center transition-all duration-500">
       <div className="text-center">
         <h3 className="text-cyber-blue text-lg font-bold leading-tight">IF AI RULED THE WORLD</h3>
-        <p className="text-[8px] text-white mt-1">Presented by AiWebTools.Ai</p>
+        <a 
+          href="https://www.aiwebtools.ai" 
+          className="text-[8px] text-white mt-1 hover:text-cyber-purple transition-colors"
+        >
+          Presented by AiWebTools.Ai
+        </a>
       </div>
       <div className="absolute top-0 left-0 right-0 bottom-0 hexagon border-2 border-cyber-purple -z-10 transform scale-[1.1] opacity-50"></div>
     </div>
