@@ -9,6 +9,7 @@ import TestimonialsSection from '../components/TestimonialsSection';
 import FaqSection from '../components/FaqSection';
 import DisclaimerSection from '../components/DisclaimerSection';
 import CallToAction from '../components/CallToAction';
+import SecondVideoSection from '../components/SecondVideoSection';
 import Footer from '../components/Footer';
 import ConsentPopup from '../components/ConsentPopup';
 
@@ -66,6 +67,7 @@ const Index = () => {
         <FaqSection />
         <DisclaimerSection />
         <CallToAction />
+        <SecondVideoSection />
         <Footer />
       </div>
       
