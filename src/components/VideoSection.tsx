@@ -39,7 +39,7 @@ const VideoSection = () => {
               <iframe 
                 width="100%" 
                 height="480" 
-                src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&mute=0&controls=1&modestbranding=1&rel=0" 
+                src="https://www.youtube.com/embed/93M9ZyhpmFM?autoplay=1&mute=0&controls=1&modestbranding=1&rel=0" 
                 title="IF AI RULED THE WORLD" 
                 frameBorder="0" 
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
