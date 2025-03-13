@@ -50,7 +50,7 @@ const SecondVideoSection = () => {
             </div>
             
             <div className="absolute bottom-0 left-0 w-full h-8 bg-gradient-to-r from-cyber-purple to-cyber-blue flex items-center justify-end px-4">
-              <div className="font-mono text-xs text-white">SYNERGISTIC INTELLIGENCE NEXUS</div>
+              <div className="font-mono text-xs text-white">An Ai Web Tools Vision</div>
             </div>
             
             {/* Visual glitch effects */}
