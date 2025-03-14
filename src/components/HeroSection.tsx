@@ -1,9 +1,6 @@
-
 import NavButton from './NavButton';
-
 const HeroSection = () => {
-  return (
-    <section className="relative py-16 overflow-hidden">
+  return <section className="relative py-16 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-block px-3 py-1 mb-6 font-mono text-xs text-cyber-blue border border-cyber-blue rounded-full animate-pulse-glow">
@@ -11,9 +8,7 @@ const HeroSection = () => {
           </div>
           
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyber-blue via-cyber-purple to-cyber-pink">
-              Experience The Future Where AI Rules Humanity
-            </span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyber-blue via-cyber-purple to-cyber-pink">Experience A Potential Future Where AI Rules Humanity</span>
           </h2>
           
           <p className="text-lg mb-8 text-gray-300 max-w-3xl mx-auto">
@@ -23,10 +18,7 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 mb-12">
-            <NavButton 
-              href="https://chatgpt.com/g/g-67d33c4324808191a4c8d81546dd6dee-if-ai-ruled-the-world-gpt"
-              className="text-lg px-8 py-4 bg-gradient-to-r from-cyber-blue to-cyber-purple text-white border-0"
-            >
+            <NavButton href="https://chatgpt.com/g/g-67d33c4324808191a4c8d81546dd6dee-if-ai-ruled-the-world-gpt" className="text-lg px-8 py-4 bg-gradient-to-r from-cyber-blue to-cyber-purple text-white border-0">
               BEGIN SIMULATION
             </NavButton>
             
@@ -49,9 +41,9 @@ const HeroSection = () => {
       
       {/* Floating geometric shapes for depth */}
       <div className="absolute top-1/4 left-10 w-32 h-32 bg-cyber-blue/5 rounded-full blur-3xl animate-float"></div>
-      <div className="absolute bottom-1/4 right-10 w-40 h-40 bg-cyber-purple/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
-    </section>
-  );
+      <div className="absolute bottom-1/4 right-10 w-40 h-40 bg-cyber-purple/5 rounded-full blur-3xl animate-float" style={{
+      animationDelay: '2s'
+    }}></div>
+    </section>;
 };
-
 export default HeroSection;
