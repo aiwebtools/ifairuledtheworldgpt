@@ -12,6 +12,7 @@ import CallToAction from '../components/CallToAction';
 import SecondVideoSection from '../components/SecondVideoSection';
 import Footer from '../components/Footer';
 import ConsentPopup from '../components/ConsentPopup';
+import ElevenLabsWidget from '../components/ElevenLabsWidget';
 
 const Index = () => {
   useEffect(() => {
@@ -73,6 +74,9 @@ const Index = () => {
       
       {/* Consent Popup */}
       <ConsentPopup />
+      
+      {/* Eleven Labs AI Chat Widget */}
+      <ElevenLabsWidget />
     </div>
   );
 };
