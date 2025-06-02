@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -63,16 +62,28 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Cyberpunk colors
+				// Enhanced Divine Cyberpunk colors
 				cyber: {
 					'dark': '#0B0B0F',
 					'black': '#000000',
-					'blue': '#00F0FF',
-					'purple': '#BD00FF',
-					'pink': '#FF0099',
-					'yellow': '#FFE600',
-					'green': '#00FF66',
-					'red': '#FF0000',
+					'blue': '#3b82f6',
+					'purple': '#8b45ff',
+					'pink': '#a855f7',
+					'yellow': '#fbbf24',
+					'green': '#10b981',
+					'red': '#ef4444',
+				},
+				// New Divine color palette
+				divine: {
+					'deep': '#1e1b4b',
+					'purple': '#8b45ff',
+					'blue': '#3b82f6',
+					'indigo': '#6366f1',
+					'violet': '#a855f7',
+					'pink': '#ec4899',
+					'gold': '#f59e0b',
+					'silver': '#e5e7eb',
+					'crystal': '#f3f4f6',
 				}
 			},
 			fontFamily: {
@@ -93,42 +104,85 @@ export default {
 					from: { height: 'var(--radix-accordion-content-height)' },
 					to: { height: '0' }
 				},
-				'pulse-glow': {
+				// Enhanced divine animations
+				'pulse-divine': {
 					'0%, 100%': { 
-						boxShadow: '0 0 5px 0 rgba(0, 240, 255, 0.4), 0 0 20px 0 rgba(0, 240, 255, 0.2)'
+						boxShadow: '0 0 20px rgba(139, 69, 255, 0.5), 0 0 40px rgba(59, 130, 246, 0.3)',
+						transform: 'scale(1)'
 					},
 					'50%': { 
-						boxShadow: '0 0 20px 5px rgba(0, 240, 255, 0.6), 0 0 50px 15px rgba(0, 240, 255, 0.3)'
+						boxShadow: '0 0 40px rgba(139, 69, 255, 0.8), 0 0 80px rgba(59, 130, 246, 0.6)',
+						transform: 'scale(1.02)'
 					}
 				},
-				'text-flicker': {
-					'0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100%': { opacity: '1' },
-					'20%, 21.999%, 63%, 63.999%, 65%, 69.999%': { opacity: '0.5' }
+				'shimmer-divine': {
+					'0%': { backgroundPosition: '-200% center' },
+					'100%': { backgroundPosition: '200% center' }
 				},
-				'float': {
-					'0%, 100%': { transform: 'translateY(0)' },
-					'50%': { transform: 'translateY(-20px)' }
+				'float-divine': {
+					'0%, 100%': { 
+						transform: 'translateY(0) translateX(0) scale(1)',
+						opacity: '0.3'
+					},
+					'33%': { 
+						transform: 'translateY(-20px) translateX(10px) scale(1.2)',
+						opacity: '0.8'
+					},
+					'66%': { 
+						transform: 'translateY(-10px) translateX(-5px) scale(0.8)',
+						opacity: '0.6'
+					}
 				},
-				'matrix-rain': {
-					'0%': { top: '-50%' },
-					'100%': { top: '110%' }
+				'divine-glow': {
+					'0%, 100%': { 
+						filter: 'hue-rotate(0deg) saturate(1.2) brightness(1)',
+						transform: 'scale(1)'
+					},
+					'50%': { 
+						filter: 'hue-rotate(30deg) saturate(1.5) brightness(1.1)',
+						transform: 'scale(1.01)'
+					}
 				},
-				'glitch': {
+				'divine-matrix-rain': {
+					'0%': { 
+						top: '-50%',
+						opacity: '0'
+					},
+					'10%': {
+						opacity: '1'
+					},
+					'90%': {
+						opacity: '1'
+					},
+					'100%': { 
+						top: '110%',
+						opacity: '0'
+					}
+				},
+				'divine-glitch': {
 					'0%, 100%': { transform: 'translate(0)' },
-					'20%': { transform: 'translate(-5px, 5px)' },
-					'40%': { transform: 'translate(-5px, -5px)' },
-					'60%': { transform: 'translate(5px, 5px)' },
-					'80%': { transform: 'translate(5px, -5px)' }
+					'20%': { transform: 'translate(-3px, 3px)' },
+					'40%': { transform: 'translate(-3px, -3px)' },
+					'60%': { transform: 'translate(3px, 3px)' },
+					'80%': { transform: 'translate(3px, -3px)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'pulse-glow': 'pulse-glow 2s infinite',
-				'text-flicker': 'text-flicker 3s linear infinite',
-				'float': 'float 6s ease-in-out infinite',
-				'matrix-rain': 'matrix-rain 20s linear infinite',
-				'glitch': 'glitch 1s ease-in-out infinite'
+				'pulse-divine': 'pulse-divine 3s ease-in-out infinite',
+				'shimmer-divine': 'shimmer-divine 3s ease-in-out infinite',
+				'float-divine': 'float-divine 6s ease-in-out infinite',
+				'divine-glow': 'divine-glow 8s ease-in-out infinite alternate',
+				'divine-matrix-rain': 'divine-matrix-rain 25s linear infinite',
+				'divine-glitch': 'divine-glitch 1s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'divine-gradient': 'linear-gradient(45deg, #8b45ff, #3b82f6, #a855f7, #8b45ff)',
+				'divine-shimmer': 'linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.5) 50%, transparent 70%)',
+			},
+			backdropBlur: {
+				'divine': '15px',
 			}
 		}
 	},
