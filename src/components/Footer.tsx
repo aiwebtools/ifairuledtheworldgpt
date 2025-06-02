@@ -12,6 +12,9 @@ const Footer = () => {
               A simulation exploring how artificial intelligence might govern human civilization, 
               offering detailed responses about AI-controlled laws, economics, ethics, and societies.
             </p>
+            <p className="text-xs text-gray-500 mb-6 max-w-md">
+              This website is for informational, educational, and research purposes only.
+            </p>
             <div className="flex items-center space-x-4">
               <NavButton href="https://chatgpt.com/g/g-67d33c4324808191a4c8d81546dd6dee-if-ai-ruled-the-world-gpt">
                 Experience Simulation
@@ -54,7 +57,7 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="https://aiwebtools.ai/terms-of-services" className="hover:text-cyber-blue transition-colors">
+                  <a href="https://aiwebtools.lovable.app/disclaimers" className="hover:text-cyber-blue transition-colors">
                     Terms of Service
                   </a>
                 </li>
