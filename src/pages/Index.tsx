@@ -22,26 +22,7 @@ const Index = () => {
     // Scroll to top on initial load
     window.scrollTo(0, 0);
     
-    // Create divine particle effects
-    const createDivineParticles = () => {
-      const particleContainer = document.createElement('div');
-      particleContainer.className = 'divine-particles';
-      document.body.appendChild(particleContainer);
-      
-      for (let i = 0; i < 50; i++) {
-        const particle = document.createElement('div');
-        particle.className = 'divine-particle';
-        particle.style.left = Math.random() * 100 + '%';
-        particle.style.top = Math.random() * 100 + '%';
-        particle.style.animationDelay = Math.random() * 6 + 's';
-        particle.style.animationDuration = (Math.random() * 4 + 4) + 's';
-        particleContainer.appendChild(particle);
-      }
-    };
-    
-    createDivineParticles();
-    
-    // Add scroll reveal animation for sections with enhanced divine effects
+    // Add scroll reveal animation for sections
     const sections = document.querySelectorAll('section');
     
     const observerOptions = {
@@ -53,15 +34,15 @@ const Index = () => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('opacity-100', 'translate-y-0', 'scale-100');
-          entry.target.classList.remove('opacity-0', 'translate-y-16', 'scale-95');
+          entry.target.classList.add('opacity-100', 'translate-y-0');
+          entry.target.classList.remove('opacity-0', 'translate-y-10');
           observer.unobserve(entry.target);
         }
       });
     }, observerOptions);
     
     sections.forEach(section => {
-      section.classList.add('transition-all', 'duration-1000', 'ease-out', 'opacity-0', 'translate-y-16', 'scale-95');
+      section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
       observer.observe(section);
     });
     
@@ -69,17 +50,12 @@ const Index = () => {
       sections.forEach(section => {
         observer.unobserve(section);
       });
-      // Clean up particles
-      document.querySelectorAll('.divine-particles').forEach(el => el.remove());
     };
   }, []);
   
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-950 via-purple-950 to-blue-950 text-white relative overflow-hidden">
-      {/* Divine Background Effects */}
-      <div className="divine-background"></div>
-      
-      {/* Enhanced Matrix-style background */}
+    <div className="min-h-screen bg-cyber-dark text-white relative overflow-hidden">
+      {/* Animated Matrix-style background */}
       <MatrixRain />
       
       {/* Main Content */}
