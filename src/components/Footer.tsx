@@ -71,7 +71,7 @@ const Footer = () => {
         
         <div className="border-t border-cyber-blue/20 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-500 text-sm mb-4 md:mb-0">
-            © 2025 <a href="https://www.aiwebtools.ai" className="hover:text-cyber-blue transition-colors font-semibold">AI WEB TOOLS LLC</a> All rights reserved. | Premium AI Tools & Simulations
+            © 2025 <a href="https://aiwebtools.lovable.app/?via=aiwebtools" className="hover:text-cyber-blue transition-colors font-semibold">AI WEB TOOLS LLC</a> All rights reserved. | Premium AI Tools & Simulations
           </div>
           
           <div>
