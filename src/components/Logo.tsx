@@ -28,7 +28,7 @@ const Logo = () => {
       <div className="text-center">
         <h3 className="text-cyber-blue text-lg font-bold leading-tight">IF AI RULED THE WORLD</h3>
         <a 
-          href="https://www.aiwebtools.ai" 
+          href="https://aiwebtools.lovable.app/?via=aiwebtools" 
           className="text-[8px] text-white mt-1 hover:text-cyber-purple transition-colors"
         >
           Presented by AiWebTools.Ai
