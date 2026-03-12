@@ -76,7 +76,7 @@ const Footer = () => {
           
           <div>
             <a 
-              href="https://www.aiwebtools.ai" 
+              href="https://aiwebtools.lovable.app/?via=aiwebtools" 
               className="cyber-button px-4 py-2 rounded-full bg-gradient-to-r from-cyber-blue to-cyber-purple text-white border-0"
               title="Explore More Premium AI Tools"
             >
