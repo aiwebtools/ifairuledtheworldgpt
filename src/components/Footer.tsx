@@ -32,7 +32,7 @@ const Footer = () => {
               <li><a href="#how-it-works" className="hover:text-cyber-blue transition-colors">AI Governance Tools</a></li>
               <li><a href="#faq" className="hover:text-cyber-blue transition-colors">AI Research FAQ</a></li>
               <li><a href="#disclaimer" className="hover:text-cyber-blue transition-colors">AI Tool Disclaimer</a></li>
-              <li><a href="https://www.aiwebtools.ai" className="hover:text-cyber-blue transition-colors">Premium AI Tools</a></li>
+              <li><a href="https://aiwebtools.lovable.app/?via=aiwebtools" className="hover:text-cyber-blue transition-colors">Premium AI Tools</a></li>
             </ul>
           </div>
           
