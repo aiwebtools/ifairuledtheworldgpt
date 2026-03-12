@@ -60,7 +60,7 @@ const ConsentPopup = () => {
           By clicking "I UNDERSTAND AND AGREE," you confirm that you have read and accept our 
           <a href="https://openai.com/policies/privacy-policy/" className="text-cyber-blue hover:underline mx-1">Privacy Policy</a>
           and
-          <a href="https://aiwebtools.ai/terms-of-services" className="text-cyber-blue hover:underline mx-1">Terms of Service</a>.
+          <a href="https://aiwebtools.lovable.app/disclaimers" className="text-cyber-blue hover:underline mx-1">Terms of Service</a>.
         </div>
       </div>
     </div>

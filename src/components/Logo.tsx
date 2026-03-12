@@ -24,11 +24,11 @@ const Logo = () => {
   }, []);
   
   return (
-    <div ref={logoRef} className="relative w-32 h-32 mx-auto mb-4 hexagon bg-cyber-black animate-pulse-glow border-2 border-cyber-blue p-5 flex items-center justify-center transition-all duration-500">
+    <div ref={logoRef} className="relative w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 flex-shrink-0 hexagon bg-cyber-black animate-pulse-glow border-2 border-cyber-blue p-3 sm:p-4 md:p-5 flex items-center justify-center transition-all duration-500">
       <div className="text-center">
-        <h3 className="text-cyber-blue text-lg font-bold leading-tight">IF AI RULED THE WORLD</h3>
+        <h3 className="text-cyber-blue text-[10px] sm:text-sm md:text-lg font-bold leading-tight">IF AI RULED THE WORLD</h3>
         <a 
-          href="https://www.aiwebtools.ai" 
+          href="https://aiwebtools.lovable.app/?via=aiwebtools" 
           className="text-[8px] text-white mt-1 hover:text-cyber-purple transition-colors"
         >
           Presented by AiWebTools.Ai

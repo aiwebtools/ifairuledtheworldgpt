@@ -32,7 +32,7 @@ const Footer = () => {
               <li><a href="#how-it-works" className="hover:text-cyber-blue transition-colors">AI Governance Tools</a></li>
               <li><a href="#faq" className="hover:text-cyber-blue transition-colors">AI Research FAQ</a></li>
               <li><a href="#disclaimer" className="hover:text-cyber-blue transition-colors">AI Tool Disclaimer</a></li>
-              <li><a href="https://www.aiwebtools.ai" className="hover:text-cyber-blue transition-colors">Premium AI Tools</a></li>
+              <li><a href="https://aiwebtools.lovable.app/?via=aiwebtools" className="hover:text-cyber-blue transition-colors">Premium AI Tools</a></li>
             </ul>
           </div>
           
@@ -71,12 +71,12 @@ const Footer = () => {
         
         <div className="border-t border-cyber-blue/20 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-500 text-sm mb-4 md:mb-0">
-            © 2025 <a href="https://www.aiwebtools.ai" className="hover:text-cyber-blue transition-colors font-semibold">AI WEB TOOLS LLC</a> All rights reserved. | Premium AI Tools & Simulations
+            © 2025 <a href="https://aiwebtools.lovable.app/?via=aiwebtools" className="hover:text-cyber-blue transition-colors font-semibold">AI WEB TOOLS LLC</a> All rights reserved. | Premium AI Tools & Simulations
           </div>
           
           <div>
             <a 
-              href="https://www.aiwebtools.ai" 
+              href="https://aiwebtools.lovable.app/?via=aiwebtools" 
               className="cyber-button px-4 py-2 rounded-full bg-gradient-to-r from-cyber-blue to-cyber-purple text-white border-0"
               title="Explore More Premium AI Tools"
             >

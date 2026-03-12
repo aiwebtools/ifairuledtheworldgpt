@@ -40,7 +40,8 @@ const SecondVideoSection = () => {
             <div className="pt-8">
               <iframe 
                 width="100%" 
-                height="480" 
+                height="315"
+                style={{ aspectRatio: '16/9', height: 'auto', minHeight: '200px' }}
                 src="https://www.youtube.com/embed/uIGemWwZrPo?mute=0&controls=1&modestbranding=1&rel=0" 
                 title="Additional AI Insights" 
                 frameBorder="0" 
